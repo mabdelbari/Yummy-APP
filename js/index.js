@@ -175,7 +175,7 @@ function displayCategories(categories) {
             <div onclick="getCategoryMeals('${categories[i].strCategory}')" class="category rounded position-relative overflow-hidden">
                 <img src="${categories[i].strCategoryThumb}" class="w-100 rounded" alt="" loading="lazy">
                 <div
-                    class="overlay position-absolute top-100 start-0 w-100 h-100 d-flex flex-column align-items-center text-center p-2">
+                    class="overlay position-absolute top-100 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center text-center p-2">
                     <h4>${categories[i].strCategory}</h4>
                     <p>${categories[i].strCategoryDescription.split(" ").slice(0, 20).join(" ")}</p>
                 </div>
