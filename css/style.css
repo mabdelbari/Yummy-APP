@@ -1,0 +1,71 @@
+:root {
+    --main-bg-color: #0D0D0D;
+
+}
+
+body {
+    background-color: var(--main-bg-color);
+}
+
+/* Loading screen */
+
+#loading-screen {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    background-color: #000;
+    color: white;
+}
+
+/* Side Navbar */
+nav {
+    background-color: var(--main-bg-color);
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 99;
+}
+
+.side-navbar {
+    background-color: #fff;
+}
+
+.nav-links .nav-item {
+    cursor: pointer;
+    margin-bottom: 20px;
+    position: relative;
+    top: 400px;
+}
+
+nav i {
+    cursor: pointer;
+}
+
+#main-content :is(.meal, .category, .area, .ingredient) {
+    cursor: pointer;
+}
+
+#main-content :is(.meal, .category) .overlay {
+    background-color: rgba(255, 255, 255, 0.70);
+    transition: all 0.5s;
+}
+
+#main-content :is(.meal, .category):hover .overlay {
+    top: 0 !important;
+}
+
+#search-inputs{
+    display: none;
+}
+
+#search-inputs input::placeholder{
+    color: #6C757D;
+}
+
+.alert{
+    display: none;
+}

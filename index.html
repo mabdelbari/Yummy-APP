@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+
+
+    <link rel="icon" href="images/logo.png">
+    <!-- Bootstrap Framework -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Fontawesome Library -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="loading-screen">
+        <i class="fa-solid fa-spinner fa-spin fa-4x"></i>
+    </div>
+
+    <nav class="d-flex">
+        <div class="collapse-menu py-4 px-3 text-white d-flex flex-column justify-content-between">
+            <div class="nav-links">
+                <ul class="list-unstyled position-relative overflow-hidden">
+                    <li class="nav-item">Search</li>
+                    <li class="nav-item">Categories</li>
+                    <li class="nav-item">Area</li>
+                    <li class="nav-item">Ingredients</li>
+                    <li class="nav-item">Contact Us</li>
+                </ul>
+            </div>
+            <div class="footer">
+                <div class="footer-icons">
+                    <span><i class="fa-brands fa-facebook"></i></span>
+                    <span><i class="fa-brands fa-twitter"></i></span>
+                    <span><i class="fa-solid fa-globe"></i></span>
+                </div>
+                <div class="footer-content" style="max-width: 200px;">
+                    Copyright Â© 2019 All Rights Reserved.
+                </div>
+            </div>
+        </div>
+        <div class="side-navbar py-4 px-2 d-flex flex-column justify-content-between align-items-center">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo image" width="50px">
+            </div>
+            <div>
+                <div class="expand-button d-block">
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                </div>
+                <div class="collapse-button d-none">
+                    <i class="fa-solid open-close-icon fa-2x fa-x"></i>
+                </div>
+            </div>
+            <div class="icons">
+                <span><i class="fa-solid fa-globe d-block"></i></span>
+                <span><i class="fa-solid fa-share-nodes"></i></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="search-inputs">
+        <div class="container py-4">
+            <div class="row gy-4">
+                <div class="col-md-6">
+                    <input type="text" id="nameSearch" class="form-control bg-transparent text-white"
+                        placeholder="Search By Name">
+                </div>
+                <div class="col-md-6">
+                    <input type="text" id="letterSearch" maxlength="1" class="form-control bg-transparent text-white"
+                        placeholder="Search By First Letter">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="main-content">
+        <div class="container py-5">
+            <div class="row gy-4" id="data-container">
+
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
